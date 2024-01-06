@@ -15,3 +15,5 @@ jobs:
         with:
           token: ${{secrets.GITHUB_TOKEN}}
           changeset_path: changelogs/fragments
+        env:
+          GH_APP_DOMAIN: ${{secrets.GH_APP_DOMAIN}}
