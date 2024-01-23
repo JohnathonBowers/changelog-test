@@ -1,4 +1,4 @@
-name: Parse Changelog
+name: OpenSearch Changelog Workflow
 
 on:
   pull_request_target:
@@ -19,6 +19,5 @@ jobs:
         uses: JohnathonBowers/OpenSearch_Parse_Changelog_Action@main
         with:
           token: ${{secrets.GITHUB_TOKEN}}
-          changeset_path: changelogs/fragments
-          CHANGELOG_PR_BRIDGE_URL_DOMAIN: ${{secrets.CHANGELOG_PR_BRIDGE_URL_DOMAIN}}
-          CHANGELOG_PR_BRIDGE_API_KEY: ${{secrets.CHANGELOG_PR_BRIDGE_API_KEY}}
+          changelog_pr_bridge_url_domain: ${{secrets.CHANGELOG_PR_BRIDGE_URL_DOMAIN}}
+          changelog_pr_bridge_api_key: ${{secrets.CHANGELOG_PR_BRIDGE_API_KEY}}
